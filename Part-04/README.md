@@ -24,6 +24,49 @@ pip install cryptography
     - The server then prompts the user to enter a response, encrypts it, and sends it back to the client.
     - The client receives the encrypted response, decrypts it, and prints it.
 
+## Diagram Description
+ 
+Imagine a simple diagram with two main components: the Client and the Server. Here's how you can visualize it:
+
+1. Client Side:
+    - A box labeled "Client" on the left side.
+    - Inside the box, you can have the following steps:
+         - Input Message: User types a message.
+         - Encrypt Message: The message is encrypted using the encryption key.
+         - Send Message: The encrypted message is sent to the server.
+2. Server Side:
+    - A box labeled "Server" on the right side.
+    - Inside the box, you can have the following steps:
+        - Receive Message: The server receives the encrypted message.
+        - Decrypt Message: The server decrypts the message using the same encryption key.
+        - Display Message: The server displays the decrypted message.
+        - Input Response: Server user types a response.
+        - Encrypt Response: The response is encrypted using the encryption key.
+        - Send Response: The encrypted response is sent back to the client.
+3. Arrows:
+    - Draw arrows to show the flow of messages between the client and the server:
+        - An arrow from "Send Message" in the Client box to "Receive Message" in the Server box.
+        - An arrow from "Send Response" in the Server box to "Receive Response" in the Client box.
+
+## Visual Representation
+ 
+Here's a textual representation of the diagram:
+
+```
++-------------------+                       +-------------------+  
+|       Client      |                       |       Server      |  
+|-------------------|                       |-------------------|  
+| 1. Input Message  |                       |                   |  
+| 2. Encrypt Message|                       |                   |  
+| 3. Send Message   |  ------------------>  |  Receive Message  |  
+|                   |                       |  Decrypt Message  |  
+|                   |                       |  Display Message  |  
+|                   |                       |  Input Response   |  
+|                   |  <------------------  |  Encrypt Response |  
+|                   |                       |  Send Response    |  
++-------------------+                       +-------------------+
+```
+
 ## Running the Example
 
 1. Start the Server:
